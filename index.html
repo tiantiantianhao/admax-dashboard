@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMax 管理系统</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="主导航">
+        <div class="sidebar-top">
+          <a class="brand" href="#top" aria-label="ADMax">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">AdMAX</span>
+          </a>
+
+          <nav class="nav-stack">
+            <section class="nav-group expanded">
+              <button class="nav-parent" type="button" aria-expanded="true">
+                <span class="nav-icon analytics" aria-hidden="true"></span>
+                <span>数字化分析</span>
+                <span class="nav-caret" aria-hidden="true"></span>
+              </button>
+              <div class="nav-children">
+                <a class="nav-child active" href="#overview">优化师看板</a>
+                <a class="nav-child" href="#materials">素材标签分析</a>
+                <a class="nav-child" href="#materials">素材分析</a>
+                <a class="nav-child" href="#compliance">素材人效看板</a>
+              </div>
+            </section>
+
+            <a class="nav-row" href="#materials">
+              <span class="nav-icon materials" aria-hidden="true"></span>
+              <span>素材管理</span>
+              <span class="nav-caret" aria-hidden="true"></span>
+            </a>
+            <a class="nav-row" href="#materials">
+              <span class="nav-icon kol" aria-hidden="true"></span>
+              <span>KOL 营销管理</span>
+              <span class="nav-caret" aria-hidden="true"></span>
+            </a>
+            <a class="nav-row" href="#overview">
+              <span class="nav-icon page" aria-hidden="true"></span>
+              <span>落地页管理</span>
+              <span class="nav-caret" aria-hidden="true"></span>
+            </a>
+            <a class="nav-row" href="#overview">
+              <span class="nav-icon workspace" aria-hidden="true"></span>
+              <span>优化师工作台</span>
+              <span class="nav-caret" aria-hidden="true"></span>
+            </a>
+            <a class="nav-row" href="#materials">
+              <span class="nav-icon social" aria-hidden="true"></span>
+              <span>社媒工作台</span>
+              <span class="nav-caret" aria-hidden="true"></span>
+            </a>
+            <a class="nav-row" href="#materials">
+              <span class="nav-icon creation" aria-hidden="true"></span>
+              <span>智能创作中心</span>
+              <span class="nav-caret" aria-hidden="true"></span>
+            </a>
+            <a class="nav-row" href="#overview">
+              <span class="nav-icon tools" aria-hidden="true"></span>
+              <span>工具库</span>
+              <span class="nav-caret" aria-hidden="true"></span>
+            </a>
+            <a class="nav-row" href="#compliance">
+              <span class="nav-icon config" aria-hidden="true"></span>
+              <span>配置中心</span>
+              <span class="nav-caret" aria-hidden="true"></span>
+            </a>
+            <a class="nav-row" href="#compliance">
+              <span class="nav-icon system" aria-hidden="true"></span>
+              <span>系统管理</span>
+              <span class="nav-caret" aria-hidden="true"></span>
+            </a>
+          </nav>
+        </div>
+
+        <div class="sidebar-bottom">
+          <button class="language" type="button">简体中文</button>
+          <button class="profile" type="button" aria-label="用户 Asin">
+            <span class="avatar" aria-hidden="true">A</span>
+            <span>Asin</span>
+            <span class="more" aria-hidden="true"></span>
+          </button>
+        </div>
+      </aside>
+
+      <main class="dashboard" id="top">
+        <section class="top-grid" aria-label="首页概览">
+          <div class="hero-panel">
+            <div class="hero-copy">
+              <p class="hero-title">Admax 数智投放</p>
+              <h1>全链路管理平台</h1>
+              <div class="hero-tags" aria-label="平台能力">
+                <span>洞察 · 快速定位问题</span>
+                <span>赋能 · 提升投放效能</span>
+                <span>智策 · 智能辅助决策</span>
+              </div>
+            </div>
+            <div class="hero-metrics" aria-label="核心状态">
+              <div>
+                <span>当前待办</span>
+                <strong>1,828</strong>
+              </div>
+              <div>
+                <span>平均处理</span>
+                <strong>35.5h</strong>
+              </div>
+              <div>
+                <span>素材产出</span>
+                <strong>1,258+</strong>
+              </div>
+            </div>
+          </div>
+
+          <section class="message-panel" aria-label="消息中心">
+            <div class="panel-head compact">
+              <h2>消息中心</h2>
+            </div>
+            <div class="message-list">
+              <button class="message-item is-unread" type="button">
+                <span class="status rejected">驳回</span>
+                <span class="message-code">脚本#1312</span>
+                <span class="message-title">SU 原创三连问</span>
+                <time>2h 前</time>
+              </button>
+              <button class="message-item is-unread" type="button">
+                <span class="status pending">待补</span>
+                <span class="message-code">脚本#1312</span>
+                <span class="message-title">LD_su 迭代 seesaw1B</span>
+                <time>5h 前</time>
+              </button>
+              <button class="message-item" type="button">
+                <span class="status rejected">拒绝</span>
+                <span class="message-code">脚本#1312</span>
+                <span class="message-title">DL 原创英雄选择</span>
+                <time>1d 前</time>
+              </button>
+              <button class="message-item" type="button">
+                <span class="status ready">就绪</span>
+                <span class="message-code">脚本#1312</span>
+                <span class="message-title">SU 原创报纸风活动</span>
+                <time>10m 前</time>
+              </button>
+              <button class="message-item" type="button">
+                <span class="status review">待审</span>
+                <span class="message-code">脚本#1312</span>
+                <span class="message-title">LD_su 迭代交易计划 aiau4B</span>
+                <time>2h 前</time>
+              </button>
+            </div>
+          </section>
+        </section>
+
+        <div class="toolbar" aria-label="看板切换">
+          <div class="tablist" role="tablist" aria-label="看板章节">
+            <button class="section-tab active" type="button" data-target="overview" role="tab" aria-selected="true">大盘监控</button>
+            <button class="section-tab" type="button" data-target="compliance" role="tab" aria-selected="false">合规时效</button>
+            <button class="section-tab" type="button" data-target="materials" role="tab" aria-selected="false">投放与素材</button>
+          </div>
+          <label class="range-select">
+            <span class="sr-only">时间范围</span>
+            <select id="rangeSelect">
+              <option>过去七天</option>
+              <option>过去三十天</option>
+              <option>本季度</option>
+            </select>
+          </label>
+        </div>
+
+        <section class="section-panel" id="overview" data-section>
+          <div class="section-head">
+            <div>
+              <h2>大盘监控</h2>
+              <p>创作、合规、投放链路的实时业务状态</p>
+            </div>
+          </div>
+
+          <div class="metric-groups">
+            <article class="metric-group">
+              <h3>周期内新进业务量</h3>
+              <div class="metric-grid">
+                <div class="metric-card">
+                  <span>期间新增脚本</span>
+                  <strong>486</strong>
+                  <small>篇</small>
+                </div>
+                <div class="metric-card">
+                  <span>期间新增工单</span>
+                  <strong>324</strong>
+                  <small>单</small>
+                </div>
+                <div class="metric-card">
+                  <span>期间产出素材</span>
+                  <strong>1,258+</strong>
+                  <small>条</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="metric-group">
+              <h3>全线待办规模概览</h3>
+              <div class="metric-grid">
+                <div class="metric-card">
+                  <span>合规审核待处理</span>
+                  <strong>1,248</strong>
+                  <small>条</small>
+                </div>
+                <div class="metric-card">
+                  <span>设计制作待处理</span>
+                  <strong>452</strong>
+                  <small>单</small>
+                </div>
+                <div class="metric-card">
+                  <span>语言客服待处理</span>
+                  <strong>128</strong>
+                  <small>项</small>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <article class="chart-block">
+            <div class="chart-head">
+              <div>
+                <h3>素材效能分析</h3>
+                <p>各节点平均驻留时长分析（H）</p>
+              </div>
+            </div>
+            <div class="bar-chart vertical" aria-label="素材效能柱状图">
+              <div class="axis y-axis">
+                <span>10</span>
+                <span>7.5</span>
+                <span>5</span>
+                <span>2.5</span>
+                <span>0</span>
+              </div>
+              <div class="bars">
+                <div class="bar-col" style="--value: 56%"><span></span><em>脚本合规审核时间</em></div>
+                <div class="bar-col" style="--value: 81%"><span></span><em>脚本修改提交效率</em></div>
+                <div class="bar-col" style="--value: 60%"><span></span><em>设计制作时长</em></div>
+                <div class="bar-col" style="--value: 95%"><span></span><em>视频离线制作周期</em></div>
+                <div class="bar-col" style="--value: 60%"><span></span><em>工单合规审核时间</em></div>
+                <div class="bar-col" style="--value: 26%"><span></span><em>工单修改提交效率</em></div>
+              </div>
+            </div>
+            <div class="footnotes">
+              <span>数据底层对齐：创作中心（CC）&amp; 广告系统（ADS）</span>
+              <span>样本规模：1,258 视频素材 / 324 生产工单 / 486 创作脚本</span>
+              <strong>指标每 15 分钟自动执行 ETL 对齐</strong>
+            </div>
+          </article>
+        </section>
+
+        <section class="section-panel" id="compliance" data-section>
+          <div class="section-head">
+            <div>
+              <h2>合规时效</h2>
+              <p>按牌照监管强度拆解审核吞吐与准确率</p>
+            </div>
+            <div class="summary-metrics">
+              <div>
+                <span>待审核总数</span>
+                <strong>1,248</strong>
+              </div>
+              <div>
+                <span>平均审核时长</span>
+                <strong>35.5h</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="compliance-grid">
+            <article class="license-column strong">
+              <h3>强监管</h3>
+              <div class="license-metrics">
+                <div>
+                  <span>AI 审核通过率</span>
+                  <strong>15.2%</strong>
+                </div>
+                <div>
+                  <span>拦截准确率</span>
+                  <strong>15.2%</strong>
+                </div>
+              </div>
+              <div class="license-list">
+                <div class="license-card" style="--progress: 7%">
+                  <div><strong>ASIC</strong><span>样本：86 条</span></div>
+                  <b>35.5h</b>
+                  <p><span>AI 审核通过率</span><em>98.4%</em></p>
+                  <i></i>
+                </div>
+                <div class="license-card" style="--progress: 68%">
+                  <div><strong>CySEC</strong><span>样本：86 条</span></div>
+                  <b>35.5h</b>
+                  <p><span>AI 审核通过率</span><em>98.4%</em></p>
+                  <i></i>
+                </div>
+                <div class="license-card" style="--progress: 42%">
+                  <div><strong>UAE_SCA</strong><span>下钻牌照详情</span></div>
+                  <b>35.5h</b>
+                  <p><span>AI 审核通过率</span><em>98.4%</em></p>
+                  <i></i>
+                </div>
+              </div>
+            </article>
+
+            <article class="license-column weak">
+              <h3>弱监管</h3>
+              <div class="license-metrics">
+                <div>
+                  <span>AI 审核通过率</span>
+                  <strong>15.2%</strong>
+                </div>
+                <div>
+                  <span>拦截准确率</span>
+                  <strong>15.2%</strong>
+                </div>
+              </div>
+              <div class="license-list">
+                <div class="license-card" style="--progress: 39%">
+                  <div><strong>FSC</strong><span>样本：86 条</span></div>
+                  <b>35.5h</b>
+                  <p><span>AI 审核通过率</span><em>98.4%</em></p>
+                  <i></i>
+                </div>
+                <div class="license-card" style="--progress: 68%">
+                  <div><strong>CIMA</strong><span>样本：86 条</span></div>
+                  <b>35.5h</b>
+                  <p><span>AI 审核通过率</span><em>98.4%</em></p>
+                  <i></i>
+                </div>
+                <div class="license-card" style="--progress: 21%">
+                  <div><strong>FSCA</strong><span>样本：86 条</span></div>
+                  <b>35.5h</b>
+                  <p><span>AI 审核通过率</span><em>98.4%</em></p>
+                  <i></i>
+                </div>
+              </div>
+            </article>
+
+            <article class="license-column local">
+              <h3>当地监管</h3>
+              <div class="license-metrics">
+                <div>
+                  <span>AI 审核通过率</span>
+                  <strong>15.2%</strong>
+                </div>
+                <div>
+                  <span>拦截准确率</span>
+                  <strong>15.2%</strong>
+                </div>
+              </div>
+              <div class="license-list compact-list">
+                <div class="license-card" style="--progress: 35%">
+                  <div><strong>CMA</strong><span>样本：86 条</span></div>
+                  <b>35.5h</b>
+                  <p><span>AI 审核通过率</span><em>98.4%</em></p>
+                  <i></i>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <article class="chart-block thin">
+            <div class="chart-head">
+              <div>
+                <h3>分牌照合规平均时数</h3>
+                <p>脚本路径与视频工单双通道对比（H）</p>
+              </div>
+            </div>
+            <div class="bar-chart grouped" aria-label="合规时效分组柱状图">
+              <div class="axis y-axis">
+                <span>10</span>
+                <span>7.5</span>
+                <span>5</span>
+                <span>2.5</span>
+                <span>0</span>
+              </div>
+              <div class="bars">
+                <div class="bar-pair"><span style="--value: 53%"></span><b style="--value: 21%"></b><em>CySEC</em></div>
+                <div class="bar-pair"><span style="--value: 92%"></span><b style="--value: 72%"></b><em>FSCA</em></div>
+                <div class="bar-pair"><span style="--value: 63%"></span><b style="--value: 36%"></b><em>ASIC</em></div>
+                <div class="bar-pair"><span style="--value: 59%"></span><b style="--value: 20%"></b><em>UAE_SCA</em></div>
+                <div class="bar-pair"><span style="--value: 86%"></span><b style="--value: 36%"></b><em>CMA</em></div>
+                <div class="bar-pair"><span style="--value: 63%"></span><b style="--value: 36%"></b><em>CIMA</em></div>
+                <div class="bar-pair"><span style="--value: 54%"></span><b style="--value: 36%"></b><em>FSC</em></div>
+              </div>
+            </div>
+            <div class="legend">
+              <span><i class="blue"></i>脚本路径（H）</span>
+              <span><i class="green"></i>视频工单（H）</span>
+            </div>
+          </article>
+        </section>
+
+        <section class="section-panel" id="materials" data-section>
+          <div class="section-head">
+            <div>
+              <h2>投放与素材效能</h2>
+              <p>聚合素材标签、媒体消耗与转化质量</p>
+            </div>
+            <div class="summary-metrics">
+              <div>
+                <span>本周平均 ROI</span>
+                <strong>4.25x</strong>
+              </div>
+              <div>
+                <span>消耗环比</span>
+                <strong>+12.4%</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="materials-grid">
+            <article class="chart-block horizontal-block">
+              <div class="chart-head">
+                <div>
+                  <h3>核心素材标签 ROI 贡献排行</h3>
+                  <p>消耗与入金 ROI 性价比分析</p>
+                </div>
+              </div>
+              <div class="horizontal-chart" aria-label="ROI 贡献排行">
+                <div class="h-row" style="--value: 32%"><span>真人出镜</span><b></b></div>
+                <div class="h-row" style="--value: 64%"><span>竞技对抗</span><b></b></div>
+                <div class="h-row" style="--value: 38%"><span>解说评论</span><b></b></div>
+                <div class="h-row" style="--value: 81%"><span>节日限定</span><b></b></div>
+                <div class="h-row" style="--value: 49%"><span>情感共鸣</span><b></b></div>
+              </div>
+              <div class="legend">
+                <span><i class="blue"></i>ROI 指数</span>
+                <span><i class="orange"></i>花费消耗</span>
+              </div>
+            </article>
+
+            <article class="creative-flow">
+              <div class="creative-head">
+                <div>
+                  <h3>实时高表现爆款素材流</h3>
+                  <p>自动捕获高转化创意资产</p>
+                </div>
+                <a href="#materials">进入全量素材看板</a>
+              </div>
+              <div class="creative-list">
+                <article class="creative-item">
+                  <div class="thumb tiktok" aria-hidden="true"></div>
+                  <div class="creative-copy">
+                    <span class="platform">TikTok</span>
+                    <h4>高转化真人口播切片</h4>
+                    <dl>
+                      <div><dt>Spend</dt><dd>$12,400</dd></div>
+                      <div><dt>CTR</dt><dd>6.2%</dd></div>
+                    </dl>
+                  </div>
+                  <div class="roi"><strong>8.25</strong><span>ROI</span></div>
+                </article>
+                <article class="creative-item">
+                  <div class="thumb facebook" aria-hidden="true"></div>
+                  <div class="creative-copy">
+                    <span class="platform">Facebook</span>
+                    <h4>活动促销多语言版本</h4>
+                    <dl>
+                      <div><dt>Spend</dt><dd>$12,400</dd></div>
+                      <div><dt>CTR</dt><dd>6.2%</dd></div>
+                    </dl>
+                  </div>
+                  <div class="roi"><strong>6.25</strong><span>ROI</span></div>
+                </article>
+                <article class="creative-item">
+                  <div class="thumb youtube" aria-hidden="true"></div>
+                  <div class="creative-copy">
+                    <span class="platform">YouTube</span>
+                    <h4>功能拆解长视频切片</h4>
+                    <dl>
+                      <div><dt>Spend</dt><dd>$12,400</dd></div>
+                      <div><dt>CTR</dt><dd>6.2%</dd></div>
+                    </dl>
+                  </div>
+                  <div class="roi"><strong>5.85</strong><span>ROI</span></div>
+                </article>
+              </div>
+            </article>
+          </div>
+
+          <div class="footnotes last">
+            <span>关联脚本：486 篇</span>
+            <span>投放工单：324 单</span>
+            <span>视频素材：1,258 条</span>
+            <strong>所有业绩指标均由媒体 API 每 15 分钟聚合计算</strong>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
